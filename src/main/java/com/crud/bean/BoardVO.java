@@ -4,10 +4,11 @@ import java.util.Date;
 
 public class BoardVO {
 	private int seq;
+	private String preference;
 	private String title;
-	private String writer;
-	private String content;
-	private Date regdate;
+	private String singer;
+	private String album;
+	private String playtime;
 	private int cnt;
 	
 	public int getSeq() {
@@ -16,30 +17,28 @@ public class BoardVO {
 	public void setSeq(int seq) {
 		this.seq = seq;
 	}
+
+	public String getPreference() {return preference; }
+	public void setPreference(String preference) { this.preference = preference; }
+
 	public String getTitle() {
 		return title;
 	}
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getWriter() {
-		return writer;
-	}
-	public void setWriter(String writer) {
-		this.writer = writer;
-	}
-	public String getContent() {
-		return content;
-	}
-	public void setContent(String content) {
-		this.content = content;
-	}
-	public Date getRegdate() {
-		return regdate;
-	}
-	public void setRegdate(Date regdate) {
-		this.regdate = regdate;
-	}
+
+	public String getSinger() {return singer; }
+	public void setSinger(String singer) { this.singer = singer; }
+
+	public String getAlbum() {return album; }
+	public void setAlbum(String album) { this.album = album; }
+
+	public String getPlaytime() {return playtime; }
+	public void setPlaytime(String playtime) { this.playtime = playtime; }
+
+
+
 	public int getCnt() {
 		return cnt;
 	}

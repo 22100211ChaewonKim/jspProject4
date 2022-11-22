@@ -19,9 +19,12 @@
 <form action="editpost.jsp" method="post">
 <input type="hidden" name="seq" value="<%=u.getSeq() %>"/>
 <table>
+	<tr><td>Preference:</td><td><input type="text" name="preference" value="<%= u.getPreference()%>"/></td></tr>
 <tr><td>Title:</td><td><input type="text" name="title" value="<%= u.getTitle()%>"/></td></tr>
-<tr><td>Writer:</td><td><input type="text" name="writer" value="<%= u.getWriter()%>" /></td></tr>
-<tr><td>Content:</td><td><textarea cols="50" rows="5" name="content"><%= u.getContent()%></textarea></td></tr>
+<tr><td>Singer:</td><td><input type="text" name="singer" value="<%= u.getSinger()%>" /></td></tr>
+<tr><td>Album:</td><td><textarea cols="50" rows="5" name="album"><%= u.getAlbum()%></textarea></td></tr>
+	<tr><td>PlayTime:</td><td><input type="text" name="playtime" value="<%= u.getPlaytime()%>" /></td></tr>
+
 <tr><td colspan="2"><input type="submit" value="Edit Post"/>
 <input type="button" value="Cancel" onclick="history.back()"/></td></tr>
 </table>

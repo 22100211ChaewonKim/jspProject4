@@ -16,5 +16,5 @@
 
 <script>
 	alert('<%=msg%>');
-	location.href='posts.jsp';
+	location.href='mainform.jsp';
 </script>
